@@ -31,7 +31,7 @@
 # *	Author				Date		Comment
 # ******************************************************************************
 # *	Selmeczi János		09.05.2022	Original version
-# *
+# * Selmeczi János      15.06.2022  Bug in PhaseDetector class corrected
 # ******************************************************************************
 
 # ==============================================================================
@@ -1601,9 +1601,9 @@ class PhaseDetector:
         if (self.pdtype == 2) :
             s = s * s
         phi = cmath.phase(s)
-        if (self.previous > self.halfpi) and (phi < -self.halfpi) and (phi - self.previous) < self.mu * self.pi :
+        if (self.previous > self.halfpi) and (phi < -self.halfpi) and (phi - self.previous) < -self.mu * self.pi :
             self.unwrap += 2.0 * math.pi
-        elif (self.previous > -self.halfpi) and (phi > self.halfpi) and (phi - self.previous) > self.mu * self.pi :
+        elif (self.previous < -self.halfpi) and (phi > self.halfpi) and (phi - self.previous) > self.mu * self.pi :
             self.unwrap -= 2.0 * math.pi
 #        if (phi - self.previous) > self.mu * math.pi :
 #            self.unwrap -= 2.0 * math.pi
