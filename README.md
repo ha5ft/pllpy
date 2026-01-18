@@ -3,7 +3,7 @@
 **The author:** ***Dr.Janos Selmeczi, HA5FT***. You could reach me at <ha5ft.jani@freemail.hu>
 ***
 
-[Talk about pllpy on YouTube](https://www.youtube.com/watch?v=mApnDERqKR8)
+[🎥 Talk about pllpy on YouTube](https://www.youtube.com/watch?v=mApnDERqKR8)
 
 ## Important documents you should read
 - [Getting started with pllpy](documentation/get_started.md)
